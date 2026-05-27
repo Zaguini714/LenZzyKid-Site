@@ -270,6 +270,11 @@ h3 {
   object-fit: cover;
 }
 
+.photo-card.portrait img {
+  aspect-ratio: 3 / 4;
+  object-position: center 34%;
+}
+
 .photo-info {
   display: grid;
   min-height: 258px;
