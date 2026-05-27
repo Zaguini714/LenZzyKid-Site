@@ -265,14 +265,36 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.gallery-divider {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 34px;
+}
+
+.gallery-divider h3 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
 .photo-card img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
+.photo-card img[src*="zip-photo"],
+.photo-card img[src*="zip2-photo"] {
+  background: #111;
+  object-fit: contain;
+}
+
 .photo-card.portrait img {
   aspect-ratio: 3 / 4;
   object-position: center 34%;
+}
+
+.photo-card.portrait img[src*="zip-photo"],
+.photo-card.portrait img[src*="zip2-photo"] {
+  object-position: center;
 }
 
 .photo-info {
